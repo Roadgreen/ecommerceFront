@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import { Fragment } from 'react'
+import { Fragment,useEffect } from 'react'
 import styles from './button.module.css'
 
 
-
 export default function Button(){
-
+   
+   
    
     return(
         <Fragment>
