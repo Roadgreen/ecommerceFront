@@ -1,0 +1,193 @@
+.a{
+    background:  no-repeat center  url('../../public/img/Button/ButtonHome/buttonhome0.svg');
+    background-size: 80px;
+    border-bottom: 3px solid black;
+    transition: border 0.5s ease-in-out ;
+    width: 60px;
+    height: 50px;
+    transition-duration: 2s;
+   
+   
+}
+
+.a:hover {
+    background-image: url('../../public/img/Button/ButtonHome/buttonhome8.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+    border-bottom: 3px solid #AFA57D;
+    transition: border 0.5s ease-in-out;
+    animation:  linear 0.5s Home;
+    -webkit-animation:  linear 0.5s Home;
+    -webkit-transition: border 0.5s ease-in-out;
+    -moz-transition: border 0.5s ease-in-out;
+    -ms-transition: border 0.5s ease-in-out;
+    -o-transition: border 0.5s ease-in-out;
+}
+
+
+@keyframes Home {
+    0%{ background-image: url('../../public/img/Button/ButtonHome/buttonhome1.svg'); transition: background-image 0.1s ease-in-out; background-size: 80px; -webkit-transition: background-image 0.1s ease-in-out; -moz-transition: background-image 0.1s ease-in-out; -ms-transition: background-image 0.1s ease-in-out; -o-transition: background-image 0.1s ease-in-out; }
+    12%{ background-image: url('../../public/img/Button/ButtonHome/buttonhome2.svg'); transition: background-image 0.1s ease-in-out; background-size: 80px; -webkit-transition: background-image 0.1s ease-in-out; -moz-transition: background-image 0.1s ease-in-out; -ms-transition: background-image 0.1s ease-in-out; -o-transition: background-image 0.1s ease-in-out; }
+    25%{ background-image: url('../../public/img/Button/ButtonHome/buttonhome3.svg'); transition: background-image 0.1s ease-in-out; background-size: 80px; -webkit-transition: background-image 0.1s ease-in-out; -moz-transition: background-image 0.1s ease-in-out; -ms-transition: background-image 0.1s ease-in-out; -o-transition: background-image 0.1s ease-in-out; }
+    37%{ background-image: url('../../public/img/Button/ButtonHome/buttonhome4.svg'); transition: background-image 0.1s ease-in-out; background-size: 80px; -webkit-transition: background-image 0.1s ease-in-out; -moz-transition: background-image 0.1s ease-in-out; -ms-transition: background-image 0.1s ease-in-out; -o-transition: background-image 0.1s ease-in-out; }
+    50%{ background-image: url('../../public/img/Button/ButtonHome/buttonhome5.svg'); transition: background-image 0.1s ease-in-out; background-size: 80px; -webkit-transition: background-image 0.1s ease-in-out; -moz-transition: background-image 0.1s ease-in-out; -ms-transition: background-image 0.1s ease-in-out; -o-transition: background-image 0.1s ease-in-out; }
+    62%{ background-image: url('../../public/img/Button/ButtonHome/buttonhome6.svg'); transition: background-image 0.1s ease-in-out; background-size: 80px; -webkit-transition: background-image 0.1s ease-in-out; -moz-transition: background-image 0.1s ease-in-out; -ms-transition: background-image 0.1s ease-in-out; -o-transition: background-image 0.1s ease-in-out; }
+    75%{ background-image: url('../../public/img/Button/ButtonHome/buttonhome7.svg'); transition: background-image 0.1s ease-in-out; background-size: 80px; -webkit-transition: background-image 0.1s ease-in-out; -moz-transition: background-image 0.1s ease-in-out; -ms-transition: background-image 0.1s ease-in-out; -o-transition: background-image 0.1s ease-in-out; }
+    100%{ background-image: url('../../public/img/Button/ButtonHome/buttonhome8.svg'); transition: background-image 0.1s ease-in-out; background-size: 80px; -webkit-transition: background-image 0.1s ease-in-out; -moz-transition: background-image 0.1s ease-in-out; -ms-transition: background-image 0.1s ease-in-out; -o-transition: background-image 0.1s ease-in-out; }
+}
+
+.b{
+    background: no-repeat center url('../../public/img/Button/ButtonTea/thés.svg');
+    background-size: 80px;
+    border-bottom: 3px solid black;
+    transition: border 0.5s ease-in-out ;
+    width: 60px;
+    height: 50px;
+    transition-duration: 2s;
+    
+   
+}
+
+.b:hover {
+    background: no-repeat center url('../../public/img/Button/ButtonTea/thés8.svg');
+    background-size: 80px;
+    border-bottom: 3px solid #AFA57D;
+    transition: border 0.5s ease-in-out ;
+    animation-duration: 0.5s;
+    animation-name: Thes;
+    transition: Thes 1s ease-in-out ;
+    -webkit-transition: border 0.5s ease-in-out ;
+    -moz-transition: border 0.5s ease-in-out ;
+    -ms-transition: border 0.5s ease-in-out ;
+    -o-transition: border 0.5s ease-in-out ;
+}
+@keyframes Thes {
+    0%{ background: no-repeat center url('../../public/img/Button/ButtonTea/thés1.svg');background-size: 80px;}
+    15%{ background: no-repeat center url('../../public/img/Button/ButtonTea/thés3.svg');background-size: 80px;}
+    30%{ background: no-repeat center url('../../public/img/Button/ButtonTea/thés4.svg');background-size: 80px;}
+    45%{background: no-repeat center url('../../public/img/Button/ButtonTea/thés5.svg');background-size: 80px;}
+    60%{background: no-repeat center url('../../public/img/Button/ButtonTea/thés6.svg');background-size: 80px;}
+    75%{background: no-repeat center url('../../public/img/Button/ButtonTea/thés7.svg');background-size: 80px;}
+    100%{background: no-repeat center url('../../public/img/Button/ButtonTea/thés8.svg');background-size: 80px;}
+}
+
+
+
+.c{
+    background: no-repeat center url('../../public/img/Button/ButtonAcc/acce1.svg');
+    background-size: 110px;
+    border-bottom: 3px solid black;
+    transition: border 0.5s ease-in-out ;
+    width: 110px;
+    height: 50px;
+    transition-duration: 2s;
+  
+   
+}
+
+.c:hover {
+    background: no-repeat center url('../../public/img/Button/ButtonAcc/acce9.svg');
+    background-size: 110px;
+    border-bottom: 3px solid #AFA57D;
+    transition: border-bottom 0.5s ease-in-out;
+    animation-duration: 0.5s;
+    animation-name: Acc;
+    transition: Acc 1s ease-in-out ;
+    -webkit-transition: border-bottom 0.5s ease-in-out;
+    -moz-transition: border-bottom 0.5s ease-in-out;
+    -ms-transition: border-bottom 0.5s ease-in-out;
+    -o-transition: border-bottom 0.5s ease-in-out;
+}
+@keyframes Acc {
+    0%{ background: no-repeat center url('../../public/img/Button/ButtonAcc/acce2.svg');background-size: 110px;}
+    15%{ background: no-repeat center url('../../public/img/Button/ButtonAcc/acce3.svg');background-size: 110px;}
+    30%{ background: no-repeat center url('../../public/img/Button/ButtonAcc/acce4.svg');background-size: 110px;}
+    45%{background: no-repeat center url('../../public/img/Button/ButtonAcc/acce5.svg');background-size: 110px;}
+    60%{background: no-repeat center url('../../public/img/Button/ButtonAcc/acce6.svg');background-size: 110px;}
+    75%{background: no-repeat center url('../../public/img/Button/ButtonAcc/acce7.svg');background-size: 110px;}
+    90%{background: no-repeat center url('../../public/img/Button/ButtonAcc/acce8.svg');background-size: 110px;}
+    100%{background: no-repeat center url('../../public/img/Button/ButtonAcc/acce9.svg');background-size: 110px;}
+}
+
+
+
+.d{
+    background: no-repeat center url('../../public/img/Button/ButtonCoffre/coffe1.svg');
+    background-size: 160px;
+    border-bottom: 3px solid black;
+    transition: border-bottom 0.5s ease-in-out ;
+    width: 180px;
+    height: 50px;
+    transition-duration: 2s;
+    -webkit-transition: border-bottom 0.5s ease-in-out ;
+    -moz-transition: border-bottom 0.5s ease-in-out ;
+    -ms-transition: border-bottom 0.5s ease-in-out ;
+    -o-transition: border-bottom 0.5s ease-in-out ;
+}
+
+.d:hover {
+    background: no-repeat center url('../../public/img/Button/ButtonCoffre/coffre8.svg');
+    background-size: 160px;
+    border-bottom: 3px solid #AFA57D;
+    transition: border-bottom 0.5s ease-in-out;
+    animation-duration: 0.5s;
+    animation-name: Coff;
+    transition: Coff 1s ease-in-out ;
+    -webkit-transition: border-bottom 0.5s ease-in-out;
+    -moz-transition: border-bottom 0.5s ease-in-out;
+    -ms-transition: border-bottom 0.5s ease-in-out;
+    -o-transition: border-bottom 0.5s ease-in-out;
+}
+@keyframes Coff {
+    0%{ background: no-repeat center url('../../public/img/Button/ButtonCoffre/coffre2.svg');background-size: 160px;}
+    15%{ background: no-repeat center url('../../public/img/Button/ButtonCoffre/coffre3.svg');background-size: 160px;}
+    30%{ background: no-repeat center url('../../public/img/Button/ButtonCoffre/coffre4.svg');background-size: 160px;}
+    45%{background: no-repeat center url('../../public/img/Button/ButtonCoffre/coffre5.svg');background-size: 160px;}
+    60%{background: no-repeat center url('../../public/img/Button/ButtonCoffre/coffre6.svg');background-size: 160px;}
+    75%{background: no-repeat center url('../../public/img/Button/ButtonCoffre/coffre7.svg');background-size: 160px;}
+    100%{background: no-repeat center url('../../public/img/Button/ButtonCoffre/coffre8.svg');background-size: 160px;}
+    
+}
+
+
+.e{
+    background: no-repeat center url('../../public/img/Button/ButtonBlog/blog1.svg');
+    background-size: 50px;
+    border-bottom: 3px solid black;
+    transition: border-bottom 0.5s ease-in-out ;
+    width: 60px;
+    height: 50px;
+    transition-duration: 2s;
+    -webkit-transition: border-bottom 0.5s ease-in-out ;
+    -moz-transition: border-bottom 0.5s ease-in-out ;
+    -ms-transition: border-bottom 0.5s ease-in-out ;
+    -o-transition: border-bottom 0.5s ease-in-out ;
+}
+
+.e:hover {
+    background: no-repeat center url('../../public/img/Button/ButtonBlog/blog8.svg');
+    background-size: 50px;
+    border-bottom: 3px solid #AFA57D;
+    transition: border-bottom 0.5s ease-in-out;
+    animation-duration: 0.5s;
+    animation-name: Blog;
+    transition: Blog 1s ease-in-out ;
+    -webkit-transition: border-bottom 0.5s ease-in-out;
+    -moz-transition: border-bottom 0.5s ease-in-out;
+    -ms-transition: border-bottom 0.5s ease-in-out;
+    -o-transition: border-bottom 0.5s ease-in-out;
+}
+@keyframes Blog {
+    0%{ background: no-repeat center url('../../public/img/Button/ButtonBlog/blog2.svg');background-size: 50px;}
+    15%{ background: no-repeat center url('../../public/img/Button/ButtonBlog/blog3.svg');background-size: 50px;}
+    30%{ background: no-repeat center url('../../public/img/Button/ButtonBlog/blog4.svg');background-size: 50px;}
+    45%{background: no-repeat center url('../../public/img/Button/ButtonBlog/blog5.svg');background-size: 50px;}
+    60%{background: no-repeat center url('../../public/img/Button/ButtonBlog/blog6.svg');background-size: 50px;}
+    75%{background: no-repeat center url('../../public/img/Button/ButtonBlog/blog7.svg');background-size: 50px;}
+    100%{background: no-repeat center url('../../public/img/Button/ButtonBlog/blog8.svg');background-size: 50px;}
+    
+}
+
+
+
