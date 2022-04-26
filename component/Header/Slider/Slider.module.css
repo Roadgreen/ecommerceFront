@@ -1,0 +1,20 @@
+.Slider {
+    width: 100%;
+    background-color: black;
+    height: 500px;
+    display: flex;
+    flex-direction:row;
+    
+}
+
+.SliderH1 {
+     color: aliceblue;
+     width: 300px;
+     justify-content: center;
+     margin: 30px;
+}
+
+.SliderImg {
+     margin-left: 0px;
+     
+}
