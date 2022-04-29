@@ -1,20 +1,78 @@
 .Slider {
     width: 100%;
-    background-color: black;
-    height: 500px;
-    display: flex;
-    flex-direction:row;
+
+    height: 100px;
+
     
 }
+.SliderDiv {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content:right;
 
-.SliderH1 {
-     color: aliceblue;
-     width: 300px;
-     justify-content: center;
-     margin: 30px;
+
+    z-index: 2;
+}
+.Txt {
+    background-color: black;
+    width: 250px;
+    font-size: 40px;
+}
+
+.Fli {
+    list-style: none;
+    width: 150px;
+    margin: 0px;
+    color: aliceblue;
+}
+.Eli {
+    list-style: none;
+    width: 150px;
+    margin: 0px;
+    color: aliceblue;
+}
+.wrapper {
+    margin: 0px;
+    height: 50px;
+    overflow: hidden;
+    list-style: none;
+    color: aliceblue;
+}
+.wrapper li{
+    margin: 0px;
+    width: 250px;
+    position: relative;
+    color: aliceblue;
+    animation: slide 10s steps(6) infinite ;
+    -webkit-animation: slide 10s steps(6) infinite ;
 }
 
 .SliderImg {
-     margin-left: 0px;
+ 
+     z-index: 0;
      
+}
+
+@keyframes slide {
+    0%{
+        
+
+    } 20% {
+        top: -50px;
+        transition: 2s ease-in;
+        -webkit-transition: 2s ease-in;
+        -moz-transition: 2s ease-in;
+        -ms-transition: 2s ease-in;
+        -o-transition: 2s ease-in;
+} 40% {
+        top: -100px;
+    } 80% {
+        top: -150px;
+    }
+    100%{
+        top: -265px;
+    }
 }
