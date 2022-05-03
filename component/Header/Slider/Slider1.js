@@ -3,6 +3,7 @@ import styles from './Slider.module.css'
 import Image from 'next/image'
 import heroimage from '../../../public/img/Slider/SliderLoopThe/heroimage.jpg'
 
+
 export default function Slider(){
   
 
@@ -13,18 +14,19 @@ export default function Slider(){
 <Fragment>
     <div className={styles.Slider}>
     <div className={styles.SliderDiv}>
-        <div className={styles.Txt}>  
-        <li className={styles.Fli}>Ici, nous</li>
-    <div className={styles.wrapper}>
-    <li>parlons</li>
-    <li>vendons du</li>
-    <li>dormons</li>
-    <li>discutons</li>
-    <li>infusons du</li>
-    <li>aimons le</li>
-    </div>
-    <li className={styles.Eli}>thé.</li>
-   </div>
+    
+        <div className={styles.txt}>
+        <h1 className={styles.h1}>Ici,<br/> nous parlons thé.</h1>
+        </div>
+        <div className={styles.productsSlider}>
+            <h1 className={styles.h1products}>Nos Thés Millénaires</h1>
+            <h1 className={styles.h1products}>Nos Thés Gourmands</h1>
+            <h1 className={styles.h1products}>Nos Infusions</h1>
+            </div>
+       
+      
+       
+    
   
 </div>
 <Image src={heroimage} className={styles.SliderImg} alt='Tea pot' layout='responsive' width="2920" height="1940"/>

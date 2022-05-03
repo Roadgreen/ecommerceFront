@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Bugaki-italic";
+    src: url("/public/img/Slider/SliderLoopThe/font/Bugaki-Italic.woff");
+  }
+
 .Slider {
     width: 100%;
 
@@ -8,47 +13,68 @@
 .SliderDiv {
     position: absolute;
     width: 100%;
-    height: 300px;
+    height: 100px;
+    margin-top: 150px;
   display: flex;
-  flex-direction: row;
-  justify-content:right;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
 
 
     z-index: 2;
 }
-.Txt {
-    background-color: black;
-    width: 250px;
-    font-size: 40px;
+.txt{
+    
+   
+    
 }
 
-.Fli {
-    list-style: none;
-    width: 150px;
-    margin: 0px;
-    color: aliceblue;
+@keyframes opa {
+    0% {
+opacity: 0;
+padding-bottom: 20px;
+    } 100% {
+opacity: 1;
+    }
 }
-.Eli {
-    list-style: none;
-    width: 150px;
-    margin: 0px;
-    color: aliceblue;
+.productsSlider h1{
+  color: aliceblue;
+  font-family: 'Bugaki-italic';
+  font-size: 25px;
+  margin: 50px;
+  text-align: center;
 }
-.wrapper {
-    margin: 0px;
-    height: 50px;
-    overflow: hidden;
-    list-style: none;
-    color: aliceblue;
+.productsSlider h1:nth-child(1) {
+    
+    animation: opa ease-in-out 2s;
+    -webkit-animation: opa ease-in-out 2s;
+    -webkit-transition: padding 12s;
+    -moz-transition: padding 12s;
+    -ms-transition: padding 12s;
+    -o-transition: padding 12s;
 }
-.wrapper li{
-    margin: 0px;
-    width: 250px;
-    position: relative;
-    color: aliceblue;
-    animation: slide 10s steps(6) infinite ;
-    -webkit-animation: slide 10s steps(6) infinite ;
+.productsSlider h1:nth-child(2) {
+    animation: opa ease-in-out 3s;
+    -webkit-animation: opa ease-in-out 3s;
 }
+.productsSlider h1:nth-child(3) {
+    animation: opa ease-in-out 4s;
+    -webkit-animation: opa ease-in-out 4s;
+}
+.productsSlider {
+ display: flex;
+ flex-direction: row;
+}
+.h1{
+    text-align: center;
+   color: white;
+   font-family: 'Bugaki-italic';
+   margin: 20px;
+   font-size: 50px;
+
+}
+
+
 
 .SliderImg {
  
@@ -56,23 +82,3 @@
      
 }
 
-@keyframes slide {
-    0%{
-        
-
-    } 20% {
-        top: -50px;
-        transition: 2s ease-in;
-        -webkit-transition: 2s ease-in;
-        -moz-transition: 2s ease-in;
-        -ms-transition: 2s ease-in;
-        -o-transition: 2s ease-in;
-} 40% {
-        top: -100px;
-    } 80% {
-        top: -150px;
-    }
-    100%{
-        top: -265px;
-    }
-}
