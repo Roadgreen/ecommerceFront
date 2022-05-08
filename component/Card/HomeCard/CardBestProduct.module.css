@@ -1,0 +1,11 @@
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: solid black 3px;
+background-color: aquamarine;
+}
+
+.h1 {
+    color: black;
+}
