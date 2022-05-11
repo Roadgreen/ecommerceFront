@@ -1,0 +1,8 @@
+.bodyHome {
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+
+   background-color: #5B948B;
+    position: relative;
+}

@@ -20,7 +20,7 @@ export default function Slider(){
         <h1 className={styles.h1T}>Ici,<br/> nous parlons thé.</h1>
         </div>
         <div className={styles.productsSlider}>
-            <Link href="/product">
+            <Link href="/product"> 
             <div className={styles.mil}><h1 className={styles.h1products1}>Nos Thés <br/>Millénaires</h1>
             <h1 className={styles.hmil}>我们的千年茶</h1>
             <button>Découvrir</button>
@@ -46,7 +46,7 @@ export default function Slider(){
     
   
 </div>
-<Image src={heroimage} className={styles.SliderImg} alt='Tea pot' layout='responsive' width="2920" height="1940"/>
+<Image src={heroimage} className={styles.SliderImg} alt='Tea pot' layout='responsive' width="900" height="500"/>
 
 </div>
 </Fragment>
