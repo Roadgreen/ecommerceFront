@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Bugaki-italic";
+    src: url("/public/img/Slider/SliderLoopThe/font/Bugaki-Italic.woff");
+  }
 .Card {
  display: flex;
  flex-direction: column;
@@ -5,7 +9,7 @@
  align-items: center;
  text-align: center;
  width: 250px;
- background-color: #2F5861;
+ background-color: #fbf1ca48;
  border: 3px solid;
  margin: 30px;
  border: none;
@@ -16,7 +20,11 @@
  -ms-border-radius: 10px 100px / 120px;
  -o-border-radius: 10px 100px / 120px;
 }
-
+.Title {
+    color: white;
+    text-align: center;
+    font-family: 'Bugaki-italic';
+}
 .Card h1{
 font-size: 15px;
 color: white;
