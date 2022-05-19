@@ -2,6 +2,11 @@
     font-family: "Bugaki-italic";
     src: url("/public/img/Slider/SliderLoopThe/font/Bugaki-Italic.woff");
   }
+  .center{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
 .Card {
  display: flex;
  flex-direction: column;
@@ -12,13 +17,42 @@
  background-color: #fbf1ca48;
  border: 3px solid;
  margin: 30px;
+ opacity: 1;
  border: none;
+ transform: translate();
+ transition:  ease-in-out 2s;
  box-shadow: 10px 5px 5px rgba(112, 112, 112, 0.377);
  border-radius: 10px 100px / 120px;
  -webkit-border-radius: 10px 100px / 120px;
  -moz-border-radius: 10px 100px / 120px;
  -ms-border-radius: 10px 100px / 120px;
  -o-border-radius: 10px 100px / 120px;
+ -webkit-transition:;
+ -moz-transition:;
+ -ms-transition:;
+ -o-transition:;
+ -webkit-transform: translate();
+ -moz-transform: translate();
+ -ms-transform: translate();
+ -o-transform: translate();
+}
+.CardBefore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    width: 250px;
+    background-color: #fbf1ca48;
+    border: 3px solid;
+    margin: 30px;
+    border: none;
+    transform: translate(12px, 10%);
+    -webkit-transform: translate(12px, 10%);
+    -moz-transform: translate(12px, 10%);
+    -ms-transform: translate(12px, 10%);
+    -o-transform: translate(12px, 10%);
 }
 .Title {
     color: white;
@@ -99,5 +133,6 @@ color: white;
 .containerMapping {
 display: flex;
 flex-direction: row;
+justify-content: center;
 flex-wrap: wrap;
 }

@@ -1,22 +1,40 @@
-import React,{useState,Fragment} from 'react'
+import React,{useState,Fragment,useRef,useEffect} from 'react'
 import styles from './CardBestProduct.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+
 
 
 export default function Card() {
 
   const data = [{photos:'/img/productCard/BestProductCard/teapng.png',id:'pjpeioj',name:'Thé Pu Erh Moudjaidin',type:'thé noir de boula',price:{vingt:45,cinquante:70,cent:90 },note:5,description:'Thé Pu erh venue des montagne de losc en chine.'},{photos:'/img/productCard/BestProductCard/teapng.png',id:'pjpeioj',name:'Thé Pu Erh Moudjaidin',type:'thé noir de boula',price:{vingt:45,cinquante:70,cent:90 },note:5,description:'Thé Pu erh venue des montagne de losc en chine.'},{photos:'/img/productCard/BestProductCard/teapng.png',id:'pjpeioj',name:'Thé Pu Erh Moudjaidin',type:'thé noir de boula',price:{vingt:45,cinquante:70,cent:90 },note: 5,description:'Thé Pu erh venue des montagne de losc en chine.'}]
 
+  
+  const [CardClass,setCardClass] = useState(styles.CardBefore)
+  const CardRef = useRef();
+  useEffect(()=>{
+    
+  
+    
+    setInterval(()=>{
+      const Bound = CardRef.current.getBoundingClientRect();
+     const BoundTop =  Bound.top;
+     
+      if(BoundTop < 600){
+        setCardClass(styles.Card);
+      } else {
 
+      }
+    },100)
  
+  },[])
 
   const mapping = (item,i) => {
   
    
 
     return (
-      <Element activeClass={styles.Card}  className={styles.Card} key={i}>
+      <div ref={CardRef} className={CardClass} key={i}>
         <div className={styles.img}>
         <Image  src={item.photos} width={100} height={85}/>
         </div>
@@ -32,20 +50,22 @@ export default function Card() {
   
  
   <Link href={`/product/${encodeURIComponent(item.id)}`}>
-  <button className={styles.rapid}>Découverte</button>
+  <button className={styles.rapid} >Découverte</button>
   </Link>
-      </Element>
+      </div>
     )
       
       
       
       };
     
-  
-
+      
+      
   return (
     <Fragment>
+
       <h1 className={styles.Title}>Nos Bestseller</h1>
+   
       <div className={styles.containerMapping}>{data.map(mapping)}</div>
       
       </Fragment>
