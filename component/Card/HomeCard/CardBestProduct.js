@@ -7,14 +7,33 @@ import Link from 'next/link'
 
 export default function Card() {
 
-  const data = [{photos:'/img/productCard/BestProductCard/teapng.png',id:'pjpeioj',name:'Thé Pu Erh Moudjaidin',type:'thé noir de boula',price:{vingt:45,cinquante:70,cent:90 },note:5,description:'Thé Pu erh venue des montagne de losc en chine.'},{photos:'/img/productCard/BestProductCard/teapng.png',id:'pjpeioj',name:'Thé Pu Erh Moudjaidin',type:'thé noir de boula',price:{vingt:45,cinquante:70,cent:90 },note:5,description:'Thé Pu erh venue des montagne de losc en chine.'},{photos:'/img/productCard/BestProductCard/teapng.png',id:'pjpeioj',name:'Thé Pu Erh Moudjaidin',type:'thé noir de boula',price:{vingt:45,cinquante:70,cent:90 },note: 5,description:'Thé Pu erh venue des montagne de losc en chine.'}]
+  const [CardClass,setCardClass] = useState(styles.CardBefore)
+  const [media,setMedia] = useState(false);
+  const [dataToMap,setDataToMap] = useState([]);
+
+
+    const Resp = [{photos:'/img/productCard/BestProductCard/teapng.png',id:'pjpeioj',name:'Thé Pu Erh Moudjaidin',type:'thé noir de boula',price:{vingt:45,cinquante:70,cent:90 },note:5,description:'Thé Pu erh venue des montagne de losc en chine.'},{photos:'/img/productCard/BestProductCard/teapng.png',id:'pjpeioj',name:'Thé Pu Erh Moudjaidin',type:'thé noir de boula',price:{vingt:45,cinquante:70,cent:90 },note:5,description:'Thé Pu erh venue des montagne de losc en chine.'},{photos:'/img/productCard/BestProductCard/teapng.png',id:'pjpeioj',name:'Thé Pu Erh Moudjaidin',type:'thé noir de boula',price:{vingt:45,cinquante:70,cent:90 },note: 5,description:'Thé Pu erh venue des montagne de losc en chine.'}]
+
 
   
-  const [CardClass,setCardClass] = useState(styles.CardBefore)
+
+
+  
+
+  
+ 
   const CardRef = useRef();
   useEffect(()=>{
-    
-  
+    const match = window.matchMedia(`(max-width:930px)`);
+    if(match.matches){
+      const newData = Resp.slice(1);
+      setDataToMap(newData)
+      console.log(newData)
+      
+    } else {
+      console.log('else',dataToMap)
+      setDataToMap(Resp)
+    }
     
     setInterval(()=>{
       const Bound = CardRef.current.getBoundingClientRect();
@@ -66,7 +85,7 @@ export default function Card() {
 
       <h1 className={styles.Title}>Nos Bestseller</h1>
    
-      <div className={styles.containerMapping}>{data.map(mapping)}</div>
+      <div className={styles.containerMapping}>{dataToMap.map(mapping)}</div>
       
       </Fragment>
     

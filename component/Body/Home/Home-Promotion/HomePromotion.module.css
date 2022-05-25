@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "Bugaki-italic";
+    src: url("/public/img/Slider/SliderLoopThe/font/Bugaki-Italic.woff");
+  }
+.promContainer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+color: #4B4737;
+}
+@media (width > 945px) {
+    .Title {
+        z-index: 1;
+    position: absolute;
+    padding-bottom: 80px;
+    font-size: 22px;
+    font-family: 'Bugaki-italic';
+    }
+    .h3{
+        text-align: center;
+        z-index: 1;
+        position: absolute;
+    padding-top: 20px;
+        font-size: 17px;
+        font-family: 'Bugaki-italic';
+    }
+    .button{
+        position:absolute;
+        width: 150px;
+        height: 50px;
+        font-family: "Bugaki-italic";
+        right: 30px;
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0);
+        transition:background-color  1s ease-in-out;
+        -webkit-transition:background-color  1s ease-in-out;
+        -moz-transition:background-color  1s ease-in-out;
+        -ms-transition:background-color  1s ease-in-out;
+        -o-transition:background-color  1s ease-in-out;
+        border: solid 2px #4B4737;
+}
+.button:hover {
+    position:absolute;
+    width: 150px;
+    height: 50px;
+    font-family: "Bugaki-italic";
+    right: 30px;
+    font-size: 18px;
+    border: none;
+    background-color: #CABF97;
+    transition: background-color 1s ease-in-out;
+    cursor: pointer; 
+    -webkit-transition: background-color 1s ease-in-out;
+    -moz-transition: background-color 1s ease-in-out;
+    -ms-transition: background-color 1s ease-in-out;
+    -o-transition: background-color 1s ease-in-out;
+}
+}
+@media (width < 945px) {
+    .Title {
+        z-index: 1;
+    position: absolute;
+    padding-bottom: 90px;
+    font-size: 19px;
+    font-family: 'Bugaki-italic';
+    }
+    .h3{
+        text-align: center;
+        z-index: 1;
+        position: absolute;
+    padding-top: 20px;
+        font-size: 15px;
+        font-family: 'Bugaki-italic';
+    }
+    .button{
+        position:absolute;
+        width: 150px;
+        height: 50px;
+        font-family: "Bugaki-italic";
+        right: 30px;
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0);
+        transition:background-color  1s ease-in-out;
+        -webkit-transition:background-color  1s ease-in-out;
+        -moz-transition:background-color  1s ease-in-out;
+        -ms-transition:background-color  1s ease-in-out;
+        -o-transition:background-color  1s ease-in-out;
+        border: solid 2px #4B4737;
+}
+.button:hover {
+    position:absolute;
+    width: 150px;
+    height: 50px;
+    font-family: "Bugaki-italic";
+    right: 30px;
+    font-size: 18px;
+    border: none;
+    background-color: #CABF97;
+    transition: background-color 1s ease-in-out;
+    cursor: pointer; 
+    -webkit-transition: background-color 1s ease-in-out;
+    -moz-transition: background-color 1s ease-in-out;
+    -ms-transition: background-color 1s ease-in-out;
+    -o-transition: background-color 1s ease-in-out;
+}
+}
+
+@media (width < 589px) {
+    .Title {
+        z-index: 1;
+    position: absolute;
+    padding-bottom: 70px;
+    font-size: 15px;
+    font-family: 'Bugaki-italic';
+    }
+    .h3{
+        text-align: center;
+        z-index: 1;
+        position: absolute;
+    padding-top: 20px;
+        font-size: 12px;
+        font-family: 'Bugaki-italic';
+    }
+    .button{
+        position:absolute;
+        width: 100px;
+        height: 40px;
+        font-family: "Bugaki-italic";
+        right: 30px;
+        font-size: 13px;
+        background-color: rgba(255, 255, 255, 0);
+        transition:background-color  1s ease-in-out;
+        -webkit-transition:background-color  1s ease-in-out;
+        -moz-transition:background-color  1s ease-in-out;
+        -ms-transition:background-color  1s ease-in-out;
+        -o-transition:background-color  1s ease-in-out;
+        border: solid 2px #4B4737;
+}
+.button:hover {
+    position:absolute;
+    width: 100px;
+    height: 40px;
+    font-family: "Bugaki-italic";
+    right: 30px;
+    font-size: 13px;
+    border: none;
+    background-color: #CABF97;
+    transition: background-color 1s ease-in-out;
+    cursor: pointer; 
+    -webkit-transition: background-color 1s ease-in-out;
+    -moz-transition: background-color 1s ease-in-out;
+    -ms-transition: background-color 1s ease-in-out;
+    -o-transition: background-color 1s ease-in-out;
+}
+}
+.imgBackground {
+    z-index:0;
+}
