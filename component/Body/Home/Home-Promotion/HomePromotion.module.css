@@ -10,7 +10,7 @@
     align-items: center;
 color: #4B4737;
 }
-@media (width > 945px) {
+@media (width >= 945px) {
     .Title {
         z-index: 1;
     position: absolute;
@@ -58,7 +58,7 @@ color: #4B4737;
     -o-transition: background-color 1s ease-in-out;
 }
 }
-@media (width < 945px) {
+@media (width < 944px) {
     .Title {
         z-index: 1;
     position: absolute;

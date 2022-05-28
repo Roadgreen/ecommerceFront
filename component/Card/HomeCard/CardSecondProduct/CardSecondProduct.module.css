@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Teko:wght@300&display=swap');
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}
+.Card {
+    z-index: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    width: 300px;
+ 
+}
+.h1{
+    
+}
+.headerCard{
+    
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    background-color: #B0AB99;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+}
+.footerCard{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    background-color: #FFF9E6; 
+    border-radius: 0px 0px 10px 10px; 
+}
