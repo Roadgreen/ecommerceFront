@@ -2,6 +2,10 @@
     font-family: "Bugaki-italic";
     src: url("/public/img/Slider/SliderLoopThe/font/Bugaki-Italic.woff");
   }
+  .container{
+    background-color: #5B948B;
+    height: 100%;
+  }
 .promContainer {
     margin-top: 100px;
     display: flex;

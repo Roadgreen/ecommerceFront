@@ -1,43 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Teko:wght@300&display=swap');
 
 .container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+ background-color: white;
+ margin-top: 70px;
     
-    
+  
 }
 .Card {
-    z-index: 1;
-    margin: 10px;
     display: flex;
-    flex-direction: column;
-   align-items: center;
-   justify-content: center;
-    width: 300px;
- 
+    align-items: center;
+    margin: 10px;  
+    width: 250px;
+    border-radius: 10% 10% 10% 10%;
+    -webkit-border-radius: 10% 10% 10% 10%;
+    -moz-border-radius: 10% 10% 10% 10%;
+    -ms-border-radius: 10% 10% 10% 10%;
+    -o-border-radius: 10% 10% 10% 10%;
+    box-shadow: 7px 5px 15px rgba(3, 3, 3, 0.541);
+    background-color: #5b948b;
+   
 }
 .h1{
     
+    color: white;
+    font-size: 19px;
 }
+
 .headerCard{
-    
-    display: flex;
-    flex-direction: column;
-   align-items: center;
-   justify-content: center;
-    background-color: #B0AB99;
-    border-radius: 10px 10px 0px 0px;
-    -webkit-border-radius: 10px 10px 0px 0px;
-    -moz-border-radius: 10px 10px 0px 0px;
-    -ms-border-radius: 10px 10px 0px 0px;
-    -o-border-radius: 10px 10px 0px 0px;
+   margin: 10px;
+   
 }
 .footerCard{
-    display: flex;
-    flex-direction: column;
-   align-items: center;
-   justify-content: center;
-    background-color: #FFF9E6; 
-    border-radius: 0px 0px 10px 10px; 
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.p {
+    display: none;
+}
+.h3{
+    display: none;
+}
+.h4{
+    color: white;
+}
+.button{
+display: none;
+}
+
+.Card:hover{
+    background-color: #FBF1CA;
+    animation: CardFlip 2s linear; -webkit-animation: CardFlip 2s linear;
+}
+
+@keyframes CardFlip {
+    0%{
+        background-color: #5b948b;
+} 50% {
+    background-color: #4d6b67;
+    transform: rotateY(90deg)    ;
+    -webkit-transform: rotateY(90deg)    ;
+    -moz-transform: rotateY(90deg)    ;
+    -ms-transform: rotateY(90deg)    ;
+    -o-transform: rotateY(90deg)    ;
+}100%{
+    background-color: #FBF1CA;
+    transform: rotateY(0deg)    ;
+    -webkit-transform: rotateY(0deg)    ;
+    -moz-transform: rotateY(0deg)    ;
+    -ms-transform: rotateY(0deg)    ;
+    -o-transform: rotateY(0deg)    ;
+}
 }

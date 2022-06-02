@@ -33,11 +33,11 @@ const mapping = (item,i) => {
 
 
     return(
-        <div className={styles.Card}>
+        <div key={i} className={styles.Card}>
             <div className={styles.headerCard}>
             <h1 className={styles.h1}>{item.name}</h1>
             <h3 className={styles.h3}>{item.type}</h3>
-            <Image className={styles.Image} src={item.photos} width={215} height={215}/>
+            <Image className={styles.Image} src={item.photos} width={105} height={105}/>
             </div>
             <div className={styles.footerCard}>
             <Image className={styles.note}  src={srcNote} width={130} height={32}/>

@@ -3,8 +3,8 @@
     src: url("/public/img/Slider/SliderLoopThe/font/Bugaki-Italic.woff");
   }
 .container{
-  margin-top: 90px;
-   background-color: #608f86;
+  
+  background-image: linear-gradient(to bottom, #5b948b, #64998e, #6c9e91, #75a394, #7da898, #86b1a7, #91bab5, #9ec2c2, #b7d0d7, #d2dee7, #ebeef4, #ffffff);
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -13,7 +13,7 @@
 
 }
 .Card {
-  background-color: #608f86;
+  
     margin-right: 10px;
     position: relative;
     width: 366px;

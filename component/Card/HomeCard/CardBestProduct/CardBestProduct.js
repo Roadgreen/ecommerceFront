@@ -81,13 +81,13 @@ export default function Card() {
       
       
   return (
-    <Fragment>
+    <div className={styles.container}>
 
       <h1 className={styles.Title}>Nos Bestseller</h1>
    
       <div className={styles.containerMapping}>{dataToMap.map(mapping)}</div>
       
-      </Fragment>
+      </div>
     
     
   )
