@@ -12,7 +12,7 @@ export default function HomeBody() {
 
         <CardBestProduct/>
         <HomePromotion/>
-        <HomeBlog/>
+      
         <CardSecondProduct/>
         <AvisClient/>
     </div>

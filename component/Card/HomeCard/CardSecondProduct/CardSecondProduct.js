@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './CardSecondProduct.module.css'
 import Image from 'next/image'
+import Leaf from '../../../../public/img/leafBackground/feuillesvg.svg'
+
 
 export default function CardSecondProduct() {
 
@@ -34,22 +36,34 @@ const mapping = (item,i) => {
 
     return(
         <div key={i} className={styles.Card}>
-            <div className={styles.headerCard}>
+            <div className={styles.CardInner}>
+            <div className={styles.CardFront}>
             <h1 className={styles.h1}>{item.name}</h1>
             <h3 className={styles.h3}>{item.type}</h3>
             <Image className={styles.Image} src={item.photos} width={105} height={105}/>
+            <h4 className={styles.h4}>  {item.price.vingt} €</h4>
             </div>
-            <div className={styles.footerCard}>
+            <div className={styles.CardBack}>
             <Image className={styles.note}  src={srcNote} width={130} height={32}/>
             <p className={styles.p}>{item.description}</p> 
             <h4 className={styles.h4}>  {item.price.vingt} €</h4>
             <button className={styles.button}>Découvrir</button>
             </div>
         </div>
+        </div>
     )
 }
 
   return (
-    <div className={styles.container}>{data.map(mapping)}</div>
+    <div className={styles.container}>
+        <img src={Leaf}  className={styles.F1}/>
+        <li className={styles.F2}></li>
+        <li className={styles.F3}></li>
+        <li className={styles.F4}></li>
+        <li className={styles.F5}></li>
+        <li className={styles.F6}></li>
+        <li className={styles.F7}></li>
+        <li className={styles.F8}></li>
+        {data.map(mapping)}</div>
   )
 }

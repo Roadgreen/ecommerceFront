@@ -1,28 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Teko:wght@300&display=swap');
 
 .container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ flex-wrap: wrap;
+  margin-bottom: 100px;
+ 
+
  background-color: white;
  margin-top: 70px;
+ width: 100%;
+ 
     
   
 }
 .Card {
-    display: flex;
-    align-items: center;
-    margin: 10px;  
+   text-align: center;
+    margin: 10px;
     width: 250px;
+    height: 290px;
+    perspective: 1000px;
+   
+    background-color: transparent;
+  
+}
+.CardInner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.Card:hover .CardInner{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.CardFront, .CardBack{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     border-radius: 10% 10% 10% 10%;
     -webkit-border-radius: 10% 10% 10% 10%;
     -moz-border-radius: 10% 10% 10% 10%;
     -ms-border-radius: 10% 10% 10% 10%;
     -o-border-radius: 10% 10% 10% 10%;
     box-shadow: 7px 5px 15px rgba(3, 3, 3, 0.541);
+    -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.CardFront {
     background-color: #5b948b;
-   
+}
+.CardBack{
+    background-color: #FBF1CA;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 .h1{
     
@@ -34,48 +73,37 @@
    margin: 10px;
    
 }
-.footerCard{
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-}
 
-.p {
-    display: none;
-}
-.h3{
-    display: none;
-}
+
+
 .h4{
     color: white;
 }
-.button{
-display: none;
-}
 
-.Card:hover{
-    background-color: #FBF1CA;
-    animation: CardFlip 2s linear; -webkit-animation: CardFlip 2s linear;
+.F1{
+    
+    
+    width: 100px;
+    height: 100px;
+    animation: F1 1s linear;
+    -webkit-animation: F1 1s linear;
 }
-
-@keyframes CardFlip {
+@keyframes F1 {
     0%{
-        background-color: #5b948b;
-} 50% {
-    background-color: #4d6b67;
-    transform: rotateY(90deg)    ;
-    -webkit-transform: rotateY(90deg)    ;
-    -moz-transform: rotateY(90deg)    ;
-    -ms-transform: rotateY(90deg)    ;
-    -o-transform: rotateY(90deg)    ;
-}100%{
-    background-color: #FBF1CA;
-    transform: rotateY(0deg)    ;
-    -webkit-transform: rotateY(0deg)    ;
-    -moz-transform: rotateY(0deg)    ;
-    -ms-transform: rotateY(0deg)    ;
-    -o-transform: rotateY(0deg)    ;
+        
+    }20%{
+
+    }40%{
+
+    }60%{
+
+    }80%{
+
+    }100%{
+
+    }
 }
-}
+
+
+
