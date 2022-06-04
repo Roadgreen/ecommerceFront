@@ -1,120 +1,23 @@
-@font-face {
-    font-family: "Bugaki-italic";
-    src: url("/public/img/Slider/SliderLoopThe/font/Bugaki-Italic.woff");
-  }
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Teko:wght@300&display=swap');
 .container{
-  
-  background-image: linear-gradient(to bottom, #5b948b, #64998e, #6c9e91, #75a394, #7da898, #86b1a7, #91bab5, #9ec2c2, #b7d0d7, #d2dee7, #ebeef4, #ffffff);
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-    
-    
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
-.Card {
-  
-    margin-right: 10px;
-    position: relative;
-    width: 366px;
-    height: 202px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: aliceblue;
-    font-family: 'Bugaki-italic';
-    transition: 1s ease-in-out;
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -ms-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
+.Card{
+  color: white;
+  font-family: 'Oswald';
+  margin: 10px;
+  background-color: #007465;
 }
-.Card:hover{
-  width: 366px;
-    height: 202px;
-  background-color: #eae5cc;
-    box-shadow: 10px 10px 10px 10px black;
-    cursor: pointer;
-    transform: scale(1.05)    ;
-    -webkit-transform: scale(1.05)    ;
-    -moz-transform: scale(1.05)    ;
-    -ms-transform: scale(1.05)    ;
-    -o-transform: scale(1.05)    ;
-    transition: 0.5s ease-in-out;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -ms-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
+.img{
+  margin: 10px;
 }
-.img {
-
-  opacity: 0.5;
-  transition: 0.5s ease-in-out;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-}
-.Card:hover .img {
-  z-index: 2;
-  opacity: 1;
-  transition: 0.5s ease-in-out;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-}
-
 .h1{
-    z-index: 3;
-    position: absolute;
-    top: 10px;
-   
-    
-
-   
+  margin-left: 10px;
+font-size: 25px;
 }
-.h3 {
-    position: absolute;
-    z-index: 3;
-   margin: 30px;
-   bottom: 10px;
-    
-   
-   
-   
-  
-}
-@media (width < 771px){
-  .h1{
-    z-index: 3;
-    position: absolute;
-    top: 40px;
-    font-size: 20px;  
-}
-.h3 {
-    position: absolute;
-    z-index: 3;
-   margin: 30px;
-   bottom: 19px; 
-   font-size: 17px;
-}
-}
-
-@media (width < 619px){
-  .h1{
-    z-index: 3;
-    position: absolute;
-    top: 40px;
-    font-size: 17px;  
-}
-.h3 {
-    position: absolute;
-    z-index: 3;
-   margin: 30px;
-   bottom: 25px; 
-   font-size: 14px;
-}
+.h3{
+  font-size: 10px;
+  margin-left: 10px;
 }

@@ -8,7 +8,7 @@
   margin-bottom: 100px;
  
 
- background-color: white;
+
  margin-top: 70px;
  width: 100%;
  
@@ -16,7 +16,7 @@
   
 }
 .Card {
-   text-align: center;
+    
     margin: 10px;
     width: 250px;
     height: 290px;
@@ -26,11 +26,13 @@
   
 }
 .CardInner{
+    
     position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+   
 }
 .Card:hover .CardInner{
     transform: rotateY(180deg);
@@ -40,6 +42,11 @@
     -o-transform: rotateY(180deg);
 }
 .CardFront, .CardBack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -54,6 +61,7 @@
 }
 .CardFront {
     background-color: #5b948b;
+    
 }
 .CardBack{
     background-color: #FBF1CA;
@@ -76,34 +84,41 @@
 
 
 
-
-.h4{
+.h4W{
     color: white;
 }
-
-.F1{
-    
-    
-    width: 100px;
-    height: 100px;
-    animation: F1 1s linear;
-    -webkit-animation: F1 1s linear;
+.h4{
+    color: #266158;
 }
-@keyframes F1 {
-    0%{
-        
-    }20%{
+.h3{
+    color: #266158;
+}
 
-    }40%{
+.button {
+   font-family: 'Teko';
+   font-size: 19px;
+   color: #266158;
+   width: 150px;
+   height: 30px;
+   background-color: transparent;
+   border: 1px solid #266158;
+   transition: 3s ease-in-out;
+   -webkit-transition: 3s ease-in-out;
+   -moz-transition: 3s ease-in-out;
+   -ms-transition: 3s ease-in-out;
+   -o-transition: 3s ease-in-out;
+}
 
-    }60%{
+.button:hover { 
+    cursor: pointer;
+    animation:button 1s ease; -webkit-animation:button 1s ease;
+}
 
-    }80%{
-
-    }100%{
-
+@keyframes button {
+    from{
+        background-color: #266158;
+        background-position: right;
+    } to{
+        background-position: left;
     }
 }
-
-
-

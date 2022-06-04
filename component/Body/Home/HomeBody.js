@@ -14,6 +14,7 @@ export default function HomeBody() {
         <HomePromotion/>
       
         <CardSecondProduct/>
+        <HomeBlog/>
         <AvisClient/>
     </div>
   )

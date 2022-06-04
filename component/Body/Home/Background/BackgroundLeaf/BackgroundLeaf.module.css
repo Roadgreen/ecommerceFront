@@ -1,0 +1,134 @@
+.F1{
+    position: absolute;
+    animation: F1 6s infinite;
+    -webkit-animation: F1 6s infinite;
+}
+.F2{
+    position: absolute;
+    animation: F1 9s infinite;
+    -webkit-animation: F1 9s infinite;
+}
+.F3{
+    position: absolute;
+    animation: F2 4s infinite;
+    -webkit-animation: F2 4s infinite;
+}
+.F4{
+    position: absolute;
+    animation: F2 6s infinite;
+    -webkit-animation: F2 6s infinite;
+}
+.F5{
+    position: absolute;
+    animation: F3 10s infinite;
+    -webkit-animation: F3 10s infinite;
+}
+.F6{
+    position: absolute;
+    animation: F3 7s infinite;
+    -webkit-animation: F3 7s infinite;
+}
+.F7{
+    position: absolute;
+    animation: F2 11s infinite;
+    -webkit-animation: F2 11s infinite;
+}
+.leafContainer{
+   
+}
+@keyframes F1 {
+    0%{
+ top: 29%;
+ opacity: 0;
+ right: 0%;
+    }20%{
+        transform:rotate(10deg) ;
+}40%{
+    transform:rotate(140deg) ;
+    right: 10%s;
+    -webkit-transform:rotate(140deg) ;
+    -moz-transform:rotate(140deg) ;
+    -ms-transform:rotate(140deg) ;
+    -o-transform:rotate(140deg) ;
+}60%{
+right: 30%;
+    }80%{
+opacity: 1;
+    }100%{
+        opacity: 0;
+        right: 20%;
+        top: 80%;
+        transform:rotateY(30deg) ;
+        -webkit-transform:rotateY(30deg) ;
+        -moz-transform:rotateY(30deg) ;
+        -ms-transform:rotateY(30deg) ;
+        -o-transform:rotateY(30deg) ;
+}
+}
+
+@keyframes F2 {
+    0%{
+ top: 29%;
+ opacity: 0;
+ left: 0%;
+    }20%{
+        transform:rotate(10deg) ;
+        -webkit-transform:rotate(10deg) ;
+        -moz-transform:rotate(10deg) ;
+        -ms-transform:rotate(10deg) ;
+        -o-transform:rotate(10deg) ;
+}40%{
+    transform:rotate(140deg) ;
+    left: 10%s;
+    -webkit-transform:rotate(140deg) ;
+    -moz-transform:rotate(140deg) ;
+    -ms-transform:rotate(140deg) ;
+    -o-transform:rotate(140deg) ;
+}60%{
+left: 30%;
+    }80%{
+opacity: 1;
+    }100%{
+        opacity: 0;
+        left: 26%;
+        top: 80%;
+        transform:rotateY(30deg) ;
+        -webkit-transform:rotateY(30deg) ;
+        -moz-transform:rotateY(30deg) ;
+        -ms-transform:rotateY(30deg) ;
+        -o-transform:rotateY(30deg) ;
+}
+}
+@keyframes F3 {
+    0%{
+ top: 29%;
+ opacity: 0;
+ left: 50%;
+    }20%{
+        transform:rotate(10deg) ;
+        -webkit-transform:rotate(10deg) ;
+        -moz-transform:rotate(10deg) ;
+        -ms-transform:rotate(10deg) ;
+        -o-transform:rotate(10deg) ;
+}40%{
+    transform:rotate(140deg) ;
+    left: 55%;
+    -webkit-transform:rotate(140deg) ;
+    -moz-transform:rotate(140deg) ;
+    -ms-transform:rotate(140deg) ;
+    -o-transform:rotate(140deg) ;
+}60%{
+left: 60%;
+    }80%{
+opacity: 1;
+    }100%{
+        opacity: 0;
+        left: 45%;
+        top: 80%;
+        transform:rotateY(30deg) ;
+        -webkit-transform:rotateY(30deg) ;
+        -moz-transform:rotateY(30deg) ;
+        -ms-transform:rotateY(30deg) ;
+        -o-transform:rotateY(30deg) ;
+}
+}
