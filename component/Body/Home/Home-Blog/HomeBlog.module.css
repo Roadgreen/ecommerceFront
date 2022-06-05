@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins&family=Teko:wght@300&display=swap');
 .container{
   display: flex;
   flex-direction: row;
@@ -6,7 +6,7 @@
 }
 .Card{
   color: white;
-  font-family: 'Oswald';
+  font-family: 'Poppins', sans-serif;
   margin: 10px;
   background-color: #007465;
 }
@@ -20,4 +20,31 @@ font-size: 25px;
 .h3{
   font-size: 10px;
   margin-left: 10px;
+}
+.buttonContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.button{
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  transition: 1s ease;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.button:hover {
+  background-color: bisque;
+  transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
 }

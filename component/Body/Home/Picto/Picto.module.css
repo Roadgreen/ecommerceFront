@@ -1,0 +1,16 @@
+.container {
+    background-color: #fff9e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+.containerImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+color: #5A948A;
+    margin: 30px;
+}

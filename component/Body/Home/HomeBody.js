@@ -5,6 +5,7 @@ import HomePromotion from './Home-Promotion/HomePromotion'
 import HomeBlog from './Home-Blog/HomeBlog'
 import CardSecondProduct from '../../Card/HomeCard/CardSecondProduct/CardSecondProduct'
 import AvisClient from './AvisClient/AvisClient'
+import Picto from '../Home/Picto/Picto'
 
 export default function HomeBody() {
   return (
@@ -16,6 +17,7 @@ export default function HomeBody() {
         <CardSecondProduct/>
         <HomeBlog/>
         <AvisClient/>
+        <Picto/>
     </div>
   )
 }

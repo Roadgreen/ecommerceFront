@@ -1,8 +1,19 @@
 import React from 'react'
-import Image from 'next/image'
+import styles from './Footer.module.css'
 
-export default function Footer() {
+
+export function Footer() {
   return (
-    <div>Footer</div>
+    
+    <div className={styles.container}>
+      <div className={styles.containerEtea}> <h2>Etea</h2>
+      <li>Qui sommes nous?</li>
+      <li>Notre Engagement</li>
+      <li>Aide-FAQ</li>
+      <li>Conditions Générales de Ventes</li>
+      <li>Livraison</li>
+      <li>Mentions Légales</li></div>
+     
+    </div>
   )
 }

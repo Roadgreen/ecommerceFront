@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins&family=Teko:wght@300&display=swap');
+
+.container{
+    background-color: #5A948A;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+.containerEtea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   margin-left: 10px;
+}

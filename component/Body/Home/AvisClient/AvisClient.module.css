@@ -1,18 +1,16 @@
-@font-face {
-    font-family: "Bugaki-italic";
-    src: url("/public/img/Slider/SliderLoopThe/font/Bugaki-Italic.woff");
-  }
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins&family=Teko:wght@300&display=swap');
 .container{
-    background-color: #938A64;
+    
     
     font-family: 'Bugaki';
     display: flex;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     
 }
 .Cards{
+    
 margin-top: 50px;
     z-index:2;
     height: 190px;
@@ -34,11 +32,11 @@ margin-right: 10px;
     margin-top: 50px;
   
     color: #266158;
-    font-family: 'Bugaki';
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 0px;
     text-align: center;
-    background-color: #938A64;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  
+    
 }
 .containerMap{
     display: flex;
@@ -46,8 +44,8 @@ margin-right: 10px;
     justify-content: center;
     align-items: center;
 }
-.containerMap:hover{
-cursor: pointer;
+.Cards:hover{
+    cursor: pointer;
 
 }
 .shadow{
@@ -85,5 +83,5 @@ cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #938A64;
+    
 }
