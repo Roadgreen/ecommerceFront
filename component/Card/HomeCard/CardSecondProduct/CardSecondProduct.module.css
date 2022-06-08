@@ -16,7 +16,7 @@
   
 }
 .Card {
-    
+    flex-basis: 25%;
     margin: 10px;
     width: 250px;
     height: 290px;

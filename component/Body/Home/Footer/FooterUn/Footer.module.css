@@ -7,6 +7,9 @@
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     
     
 }
@@ -14,8 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-   margin-left: 10px;
-   margin: 30px;
+   
 }
 .containerEtea li:hover{
     border-bottom: 1px solid #fff9e6;
@@ -39,7 +41,7 @@ display:flex ;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin: 30px;
+
 text-align: center;
 }
 .containerSocial h3{
@@ -50,8 +52,7 @@ text-align: center;
    display: flex;
    flex-direction: column;
     justify-content: center;
-    margin-left: 30px;
-    text-align: center;
+        text-align: center;
 }
 .Image{ 
     

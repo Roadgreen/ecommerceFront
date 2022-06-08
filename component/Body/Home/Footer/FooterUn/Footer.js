@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Footer.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '../../../../../public/img/LogoMenu/logoDesktop.svg'
+import logo from '../../../../../public/img/LogoMenu/logoDesktop.png'
 import insta from '../../../../../public/img/picto/PictoFooter/insta.png'
 import facebook from '../../../../../public/img/picto/PictoFooter/facebook.png'
 import tik from '../../../../../public/img/picto/PictoFooter/tik.png'
@@ -20,7 +20,7 @@ export function Footer() {
       <li><Link href={'/'}>Mentions Légales</Link></li>
      </div>
      <div className={styles.logo}>
-     <Image  src={logo} width={90} height={90}/>
+     <Image layout="fixed" src={logo} width={90} height={50}/>
      <p>©2022 ETEA </p>
      </div>
      <div className={styles.containerSocial}>
