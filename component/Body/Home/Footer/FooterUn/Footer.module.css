@@ -2,16 +2,58 @@
 
 .container{
     background-color: #5A948A;
-    color: white;
+    color: #fff9e6;
     text-decoration: none;
     list-style: none;
     display: flex;
     flex-direction: row;
-
+    
+    
 }
 .containerEtea {
     display: flex;
     flex-direction: column;
     justify-content: center;
    margin-left: 10px;
+   margin: 30px;
+}
+.containerEtea li:hover{
+    border-bottom: 1px solid #fff9e6;
+    transition:1s ease-out;
+    -webkit-transition:1s ease-out;
+    -moz-transition:1s ease-out;
+    -ms-transition:1s ease-out;
+    -o-transition:1s ease-out;
+}
+.containerEtea li{
+    border-bottom: 1px solid transparent;
+    transition: 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+}
+
+.logo{
+display:flex ;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 30px;
+text-align: center;
+}
+.containerSocial h3{
+    color: #fff9e6;
+}
+
+.containerSocial{
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    text-align: center;
+}
+.Image{ 
+    
+    cursor:pointer;
 }
