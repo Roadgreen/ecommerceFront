@@ -1,0 +1,40 @@
+.Cart{
+    margin-top: 8px;
+    margin-left: 40px;
+    color: #bbb69b;
+    transition: 2s ease-in-out;
+}
+
+.Cart:hover{
+    transform: matrix(1,3);
+    margin-top: 8px;
+    margin-left: 40px;
+    color: #ddd8ba33;
+    cursor: pointer;
+    -webkit-transform: matrix(1,3);
+    -moz-transform: matrix(1,3);
+    -ms-transform: matrix(1,3);
+    -o-transform: matrix(1,3);
+    transition: 2s ease-in-out;
+    -webkit-transition: 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    -ms-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+}
+
+.Numb{
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    width: 13px;
+    height: 13px;
+    margin-left: -5px;
+    margin-top: 15px;
+    background-color: #bbb69b;
+    border-radius: 90%;
+    -webkit-border-radius: 90%;
+    -moz-border-radius: 90%;
+    -ms-border-radius: 90%;
+    -o-border-radius: 90%;
+}

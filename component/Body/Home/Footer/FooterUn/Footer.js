@@ -11,6 +11,7 @@ export function Footer() {
   return (
     
     <div className={styles.container}>
+      <div className={styles.containerOne}>
       <div className={styles.containerEtea}> 
       <li><Link href={'/'}>Qui sommes nous?</Link></li>
       <li><Link href={'/'}>Notre Engagement</Link></li>
@@ -19,11 +20,7 @@ export function Footer() {
       <li><Link href={'/'}>Livraison</Link></li>
       <li><Link href={'/'}>Mentions Légales</Link></li>
      </div>
-     <div className={styles.logo}>
-     <Image layout="fixed" src={logo} width={90} height={50}/>
-     <p>©2022 ETEA </p>
-     </div>
-     <div className={styles.containerSocial}>
+      <div className={styles.containerSocial}>
        <h3>Suivez-nous : </h3>
        <div><Link href={'/'}><Image className={styles.Image} layout='fixed' src={facebook} width={30}
        height={30} /></Link>
@@ -31,9 +28,15 @@ export function Footer() {
        height={30} /></Link>
        <Link href={'/'}><Image layout='fixed' className={styles.Image} src={tik} width={30}
        height={30} /></Link></div>
-       
+      </div>
+      </div>
+    
+       <div className={styles.logo}>
+     <Image layout="fixed" src={logo} width={90} height={50}/>
+     <p>©2022 ETEA </p>
+     </div>
       
-        </div>
+       
      
     </div>
   )

@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    flex-direction: row;
+
+}
+.containerFilter{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    width: 40px;
+    height: 22px;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 1s ease-in-out;
+}
+.containerFilter div{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+}
+
+.button div{
+    width: 15px;
+    height: 15px;
+    margin-left: -4px;
+    border: 3px solid grey;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 1s ease-in-out;
+}
+
+.buttonClicked{
+    background-color:#FBF1CA ;
+    width: 40px;
+    height: 22px;
+    border-color: rgb(129, 120, 120);
+    border-style: solid;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 1s ease-in-out;
+}
+.buttonClicked div{
+    width: 15px;
+    height: 15px;
+    margin-left: 14px;
+    border: 3px solid grey;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+}

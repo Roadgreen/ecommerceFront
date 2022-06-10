@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=PT+Sans+Narrow&display=swap');
+
+
+.container{
+    display: flex;    
+    margin-left: 40px;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+}
+.container div h4{
+    color: #bbb69b;
+    text-align: center;
+    cursor: pointer;
+    
+  margin:10px
+}
+.container div{
+   
+    box-sizing: border-box;
+    border-top: 8px solid transparent;
+    border-bottom:5px solid transparent;
+    transition: 1s ease-in-out;
+
+}
+.container div:hover{
+    cursor: pointer;
+    box-sizing:content-box;
+    border-bottom:5px solid #bbb69b;
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+}

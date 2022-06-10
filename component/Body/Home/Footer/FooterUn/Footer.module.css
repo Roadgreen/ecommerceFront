@@ -6,7 +6,7 @@
     text-decoration: none;
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
    
 }
 .containerEtea li:hover{
@@ -57,4 +58,12 @@ text-align: center;
 .Image{ 
     
     cursor:pointer;
+}
+.containerOne{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+    
 }
