@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.containerCard{
+    margin-left:10px;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+
+}

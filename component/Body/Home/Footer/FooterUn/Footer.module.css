@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins&family=Teko:wght@300&display=swap');
 
+
 .container{
     background-color: #5A948A;
     color: #fff9e6;
@@ -10,6 +11,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+    z-index: 30;
+    bottom: 0;
     
     
 }

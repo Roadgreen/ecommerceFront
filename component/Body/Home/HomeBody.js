@@ -6,18 +6,23 @@ import HomeBlog from './Home-Blog/HomeBlog'
 import CardSecondProduct from '../../Card/HomeCard/CardSecondProduct/CardSecondProduct'
 import AvisClient from './AvisClient/AvisClient'
 import Picto from '../Home/Picto/Picto'
+import Slider from '../../Header/Slider/Slider1'
+
 
 export default function HomeBody() {
   return (
+    <>
+    <Slider/>
     <div className={styles.bodyHome}>
 
-        <CardBestProduct/>
-        <HomePromotion/>
-      
-        <CardSecondProduct/>
-        <HomeBlog/>
-        <AvisClient/>
-        <Picto/>
-    </div>
+    <CardBestProduct/>
+    <HomePromotion/>
+  
+    <CardSecondProduct/>
+    <HomeBlog/>
+    <AvisClient/>
+    <Picto/>
+</div></>
+    
   )
 }
