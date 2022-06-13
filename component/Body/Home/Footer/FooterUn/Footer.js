@@ -13,21 +13,21 @@ export function Footer() {
     <div className={styles.container}>
       <div className={styles.containerOne}>
       <div className={styles.containerEtea}> 
-      <li><Link href={'/'}>Qui sommes nous?</Link></li>
-      <li><Link href={'/'}>Notre Engagement</Link></li>
-      <li><Link href={'/'}>Aide-FAQ</Link></li>
-      <li><Link href={'/'}>Conditions Générales de Ventes</Link></li>
-      <li><Link href={'/'}>Livraison</Link></li>
-      <li><Link href={'/'}>Mentions Légales</Link></li>
+      <Link href={'/'}><li>Qui sommes nous?</li></Link><Link href={'/'}><li>Notre Engagement</li></Link>
+      <Link href={'/'}><li>Aide-FAQ</li></Link>
+      <Link href={'/'}><li>Conditions Générales de Ventes</li></Link>
+      <Link href={'/'}><li>Livraison</li></Link>
+     <Link href={'/'}><li>Mentions Légales</li></Link>
      </div>
       <div className={styles.containerSocial}>
        <h3>Suivez-nous : </h3>
-       <div><Link href={'/'}><Image className={styles.Image} layout='fixed' src={facebook} width={30}
-       height={30} /></Link>
-       <Link href={'/'}><Image layout='fixed' className={styles.Image} src={insta} width={30}
-       height={30} /></Link>
-       <Link href={'/'}><Image layout='fixed' className={styles.Image} src={tik} width={30}
-       height={30} /></Link></div>
+       <div><Link href={'/'}><div><Image className={styles.Image} layout='fixed' src={facebook} width={30}
+       height={30} /></div></Link>
+
+       <Link href={'/'}><div><Image layout='fixed' className={styles.Image} src={insta} width={30}
+       height={30} /></div></Link>
+       <Link href={'/'}><div><Image layout='fixed' className={styles.Image} src={tik} width={30}
+       height={30} /></div></Link></div>
       </div>
       </div>
     

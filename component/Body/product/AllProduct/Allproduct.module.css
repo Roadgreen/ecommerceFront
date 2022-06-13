@@ -8,6 +8,76 @@
 .containerCard{
     margin-left:10px;
     margin-bottom: 10px;
-    border: 1px solid grey;
+    border: 1px solid #2F4858;
+    width: 250px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.26);
 
+}
+
+.containerPrice div button{
+    cursor: pointer;
+width: 50px;
+height: 70px;
+background-color: transparent;
+border: 1px solid #57958E;
+transition: 1s ease-in-out;
+}
+.containerPrice div button:hover{
+    transition: 1s ease-in-out;
+    background-color: #FBF1CA;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+}
+.containerPrice div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    
+}
+
+.containerPrice div div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.containerPrice div input{
+    width: 50px;
+    height: 70px;
+    text-align: center;
+    
+
+}
+.button{
+    cursor: pointer;
+    height: 35px;
+    width: 150px;
+    background-color: #57958E;
+    border: 1px solid #57958E;
+    color: white;
+    margin: 10px;
+    transition: 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+}
+.button:hover{
+    background-color: #FBF1CA;
+    color: black;
+    transition: 1s ease-out;
+    -webkit-transition: 1s ease-out;
+    -moz-transition: 1s ease-out;
+    -ms-transition: 1s ease-out;
+    -o-transition: 1s ease-out;
+}
+.edition {
+    background-color: #57958E;
+    width: 80px;
+    color: white;
+    font-size: 15px;
 }

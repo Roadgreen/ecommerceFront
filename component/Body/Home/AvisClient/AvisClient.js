@@ -34,7 +34,7 @@ export default function AvisClient() {
             break;
         }
         return(
-            <div className={styles.containerMap}>
+            <div className={styles.containerMap} key={i}>
         <div className={styles.Cards}>
             <h2 className={styles.h2}>{item.name}</h2>
             <Image className={styles.img} src={srcNote} width={130} height={32} />
