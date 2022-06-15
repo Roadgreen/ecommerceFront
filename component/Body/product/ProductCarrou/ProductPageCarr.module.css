@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+width: 50%;
+height: 100%;
+
+align-items: center;
+justify-content: center;
+}
+
+.container button{
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+}
+.pictoReturn{
+    transform: rotate(0.5turn);
+}
+.divO{
+   
+    width: 100px;
+    height: 100px;
+
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+}
+.divT{
+    width: 1000px;
+    
+    height: 300px;
+   
+    -webkit-transform:perspective(100px);
+    -moz-transform:perspective(100px);
+    -ms-transform:perspective(100px);
+    -o-transform:perspective(100px);
+    transition: 1s ease-in-out;
+}
+.divTh{
+  
+    width: 100px;
+    height: 100px;
+   
+    transition: 1s ease-in-out;
+}
+.divF{
+    
+    width: 100px;
+    height: 100px;
+   
+    transition: 1s ease-in-out;
+}
