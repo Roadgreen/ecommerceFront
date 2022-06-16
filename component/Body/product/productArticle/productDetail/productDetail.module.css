@@ -1,0 +1,23 @@
+.container{
+
+}
+.containerButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.containerButton div button {
+    background-color: white;
+    border: 1px solid #5a948a;
+}
+.containerButton div button{
+    
+}
+.middleBut{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.containerButton p{
+    margin-top: 5px;
+}
