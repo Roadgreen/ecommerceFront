@@ -49,7 +49,7 @@ export default function productDetail(props) {
           <div className={styles.middleBut}> <button><Image src={CinqPict} width={42} height={70}/></button><p>50G</p></div>
           <div> <button><Image src={CinqPict} width={42} height={70}/></button><p>100G</p></div>
         </div>
-        <button>Ajouter au panier</button>
+        <button className={styles.addButton}>Ajouter au panier</button>
         
     </div>
   )
