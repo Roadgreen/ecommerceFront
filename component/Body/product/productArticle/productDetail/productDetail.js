@@ -1,13 +1,51 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styles from './productDetail.module.css'
 import Image from 'next/image'
 import TwenPict from '../../../../../public/img/productCard/GramPicto/poch20.png'
 import CinqPict from '../../../../../public/img/productCard/GramPicto/verre50.png'
 
 
+
 export default function productDetail(props) {
     const data = props.data;
     console.log(data);
+
+    const mapPrice = [data.price.vingt,data.price.cinquante,data.price.cent]
+   const [quantity,setQuantity] = useState(1);
+   const [gram,setGram] = useState(data.price.vingt);
+   const [price,setPrice] = useState(gram * quantity);
+   function decrease(){
+    if(quantity > 1){
+      const gr = gram;
+      setQuantity(x=> x-1)
+      setPrice(x => x - gr)
+    }
+   }
+   function increase(){
+      setQuantity(x=> x + 1)
+      setPrice(x => x + gram)
+    }
+      function gramV(){
+        const c = mapPrice[0];
+        setGram(c)
+        const v = mapPrice[0] * quantity;
+       setPrice(v);
+     
+      }
+  
+      function gramC(){
+        const c = mapPrice[0];
+        setGram(c)
+        const v = mapPrice[1] * quantity;
+        setPrice(v);
+       
+       }
+  
+       function gramCe(){
+        const v = mapPrice[2] * quantity;
+       setPrice(v);
+      
+       }
 
     function note(d){
       var srcNote = '';
@@ -41,13 +79,21 @@ export default function productDetail(props) {
         <h3>{data.edition}</h3>
         <h1>{data.name}</h1>
         <h2>{data.type}</h2>
-        <p>{data.description}</p><div className={styles.notes}>
-        <Image src={note(data.note)} width={130} height={32}/>
+        <p>{data.description}</p>
+        <div className={styles.notes}>
+        <Image  src={note(data.note)} width={130} height={32}/>
         </div>
         <div className={styles.containerButton}>
-          <div><button><Image src={TwenPict} width={42} height={70}/></button><p>20G</p></div>
-          <div className={styles.middleBut}> <button><Image src={CinqPict} width={42} height={70}/></button><p>50G</p></div>
-          <div> <button><Image src={CinqPict} width={42} height={70}/></button><p>100G</p></div>
+          <div><button onClick={()=>{gramV()}}><Image src={TwenPict} width={42} height={70}/></button><p>20G</p></div>
+          <div className={styles.middleBut}> <button onClick={()=>{gramC()}}><Image src={CinqPict} width={42} height={70}/></button><p>50G</p></div>
+          <div> <button onClick={()=>{gramCe()}}><Image src={CinqPict} width={42} height={70}/></button><p>100G</p></div>
+        </div>
+        <div className={styles.DetailFoot}>
+          <button onClick={()=>{decrease()}}>-</button>
+          <input type="number" placeholder={quantity}/>
+          <button onClick={()=>{increase()}}>+</button>
+          <p>prix: {price}€</p>
+       
         </div>
         <button className={styles.addButton}>Ajouter au panier</button>
         
