@@ -14,37 +14,59 @@ export default function Allproduct(props) {
    const [quantity,setQuantity] = useState(1);
    const [gram,setGram] = useState(item.price.vingt);
    const [price,setPrice] = useState(gram * quantity);
-   function decrease(){
+   const decrease = ()=>{
     if(quantity > 1){
-      const gr = gram;
-      setQuantity(x=> x-1)
-      setPrice(x => x - gr)
+     
+
+      setQuantity(--quantity)
+      const gr = price - gram;
+      setPrice(gr);
+      console.log(price,quantity,gram)
+      
     }
    }
-   function increase(){
-      setQuantity(x=> x + 1)
-      setPrice(x => x + gram)
-    }
-      function gramV(){
+  
+    const increase = ()=>{
+      const gr = price + gram;
+      console.log(gr);
+      const quant = quantity + 1;
+        setQuantity(++quantity);
+        console.log(quant,quantity);
+      const pri  = quantity * gram;
+        setPrice(pri);
+        console.log(price,quantity,gram)
+      }
+   
+  
+      const gramV = () => {
         const c = mapPrice[0];
-        setGram(c)
-        const v = mapPrice[0] * quantity;
-       setPrice(v);
-     
+        const v = c * quantity;
+        return(
+          setGram(c),
+        setPrice(v),
+          console.log(price,quantity,gram)
+        )
+        
       }
   
-      function gramC(){
-        const c = mapPrice[0];
-        setGram(c)
-        const v = mapPrice[1] * quantity;
-        setPrice(v);
+      const gramC = ()=>{
+        const c = mapPrice[1];
+        const v = c * quantity;
+        return(
+          setGram(c),
+          setPrice(v),
+          console.log(price,quantity,gram)
+        )
        
        }
   
-       function gramCe(){
-        const v = mapPrice[2] * quantity;
-       setPrice(v);
-      
+       const gramCe = ()=>{
+        const c = mapPrice[2];
+        const v = c * quantity;
+        return( 
+          setGram(c),
+        setPrice(v),
+        console.log(price,quantity,gram))
        }
    
    

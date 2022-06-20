@@ -1,120 +1,55 @@
 .container{
-display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- color: #5a948a;
-margin-bottom: 20px;
-}
-.container h3{
-    text-align: right;
-    font-size: 13px;
-}
-.container h1{
-    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    color: #5a948a;
 }
-.container h2{
-    font-size: 19px;
-    text-align: center;
+.corp{
+    border: 1px solid #5a948a;
+    margin: 10px;
+    color: #5a948a;
 }
 .container p{
-    font-size: 15px;
-    text-align: center;
+    margin: 10px;
 }
+.Title{
+display: flex;
+flex-direction: row;
+justify-content: center;
+text-align: center;
 
-.containerButton{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
 }
-.containerButton div button {
-    background-color: rgba(255, 255, 255, 0.445);
-    border: 1px solid #5a948a;
-    cursor: pointer;
-    transition: 1s ease-in-out;
-}
-.containerButton div> button:hover{
-    cursor: pointer;
-    background-color: #FBF1CA;
-    transition: 1s ease-in-out;
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -ms-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-}
-.notes{
-    width: 25%;
-margin-left: 70%;
-margin-bottom: 30px;
-}
-.middleBut{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.containerButton p{
-    margin-top: 5px;
-}
-.addButton{
-    background-color: #5a948a;
-    border: 1px solid #5a948a;
-    color: white;
+.button{
     width: 150px;
-    height: 40px;
-    transition: 1s ease-in-out;
-    cursor: pointer;
-    
-}
-.addButton:hover{
-    background-color: #FBF1CA;
-    color: #5a948a;
-    transition: 1s ease-in-out;
-
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -ms-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-}
-.DetailFoot{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 20px;
-align-items: center;
-}
-.DetailFoot button{
-    color: #5a948a;
-width: 40px;
-height: 50px;
-background-color: white;
-border: 1px solid #5a948a;
-cursor: pointer;
-transition: 1s ease-in-out;
-}
-.DetailFoot button:hover{
-    background-color: #FBF1CA;
-    transition: 1s ease-in-out;
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -ms-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-}
-.DetailFoot input{
-    text-align: center;
-    color: #5a948a;
-    width: 40px;
-    height: 50px;
-    border-bottom: 1px solid #5a948a;
-    border-top: 1px solid #5a948a;
-    border-right: 0px solid ;
-    border-left: 0px solid ;
-}
-.DetailFoot input::placeholder{
-    color: #5a948a;
-}
-.DetailFoot p{
-    margin-left: 30px;
     font-size: 20px;
+    background-color: white;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #5a948a;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.buttonChecked{
+    width: 150px;
+    font-size: 20px;
+    background-color: white;
+    color: #5a948a;
+    border-bottom: 1px solid #5a948a;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 10px;
+    cursor: pointer;
+}
 
+.detailChecked{
+    border: 1px solid #5a948a;
+    margin: 10px;
+}
+.detail{
+    display: none;
 }
