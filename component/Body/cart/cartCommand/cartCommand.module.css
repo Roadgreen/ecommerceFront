@@ -1,0 +1,53 @@
+.containerCommand{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .containerCommand div:nth-child(1){
+        font-size: 10px;
+        text-align: center;
+        border: 1px solid;
+    }
+    .containerCommand div:nth-child(3){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .containerCommand div:nth-child(5){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .containerCommand div:nth-child(5) h4{
+        flex: 2;
+        margin-left: 10px;
+    }
+    .containerCommand div:nth-child(5) p{
+        margin-right: 10px;
+    }
+    .containerCommand div:nth-child(3) h4{
+        flex: 2;
+        margin-left: 10px;
+    }
+    .containerCommand div:nth-child(3) p{
+        margin-right: 10px;
+    }
+    .containerCommand div span:nth-child(1){
+        margin: 20px;
+        height: 1px;
+        background-color: black;
+        width: 80%;
+    }
+    .containerCommand div:nth-child(4),.containerCommand div:nth-child(6),.containerCommand div:nth-child(8),.containerCommand div:nth-child(7){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerCommand button{
+        border: 1px solid;
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: white;
+    }

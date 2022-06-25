@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Libre+Bodoni:wght@500&display=swap');
+
 .container{
     display: flex;
     flex-direction: column;
@@ -12,12 +14,14 @@
 }
 .container p{
     margin: 10px;
+    font-family: 'EB Garamond', serif;
 }
 .Title{
 display: flex;
 flex-direction: row;
 justify-content: center;
 text-align: center;
+font-family: 'EB Garamond', serif;
 
 }
 .button{
@@ -32,8 +36,10 @@ text-align: center;
     border: none;
     margin: 10px;
     cursor: pointer;
+    font-family: 'EB Garamond', serif;
 }
 .buttonChecked{
+    font-family: 'EB Garamond', serif;
     width: 150px;
     font-size: 20px;
     background-color: white;
@@ -49,7 +55,44 @@ text-align: center;
 .detailChecked{
     border: 1px solid #5a948a;
     margin: 10px;
+
+}
+.detailChecked h2{
+    font-family: 'EB Garamond', serif;
+}
+.containerCom h2{
+    font-family: 'EB Garamond', serif;
 }
 .detail{
     display: none;
 }
+.containerCom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerComTwo{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    margin: 10px;
+    width: 80%;
+}
+.containerComTwo div h3{
+    margin-right: 30px;
+    margin-left: 30px;
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+}
+.containerComTwo div{
+    margin: 10px;
+}
+.containerCom div div{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+}
+

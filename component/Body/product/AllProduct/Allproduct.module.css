@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Libre+Bodoni:wght@500&display=swap');
+
 .container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
 }
 
 .containerCard{
@@ -11,7 +14,13 @@
     border: 1px solid #2F4858;
     width: 250px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.26);
+    font-family: 'EB Garamond', serif;
+    color: #57958E;
 
+}
+.containerPrice{
+    font-family: 'EB Garamond', serif;
+    color: #57958E;
 }
 
 .containerPrice div button{
@@ -21,6 +30,7 @@ height: 70px;
 background-color: transparent;
 border: 1px solid #57958E;
 transition: 1s ease-in-out;
+
 }
 .containerPrice div button:hover{
     transition: 1s ease-in-out;
@@ -37,7 +47,7 @@ transition: 1s ease-in-out;
     align-items: center;
     justify-content: center;
     margin-top: -10px;
-    
+    font-family: 'EB Garamond', serif;
 }
 
 .containerPrice div div{
@@ -49,6 +59,11 @@ transition: 1s ease-in-out;
     width: 50px;
     height: 70px;
     text-align: center;
+    color: #57958E;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 1px solid #57958E;
+    border-bottom: 1px solid #57958E;
     
 
 }

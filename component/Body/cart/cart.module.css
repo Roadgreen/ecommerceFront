@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=PT+Sans+Narrow&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: row;
+    font-family: 'PT Sans Narrow', sans-serif;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.containerProduct {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-right: 10px;
+}
+.containerHead{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 228, 196, 0.39);
+    text-align: center;
+}
+.containerHead div:nth-child(1){
+    flex: 2;
+    margin-left: 20px;
+}
+.containerHead div:nth-child(2),.containerHead div:nth-child(3),.containerHead div:nth-child(4){
+    flex: 1;
+}
+.containerMap{
+    display: flex;
+    flex-direction: column;
+   
+}
+.containerMap div{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    align-items: center;
+text-align: center;
+}
+.containerMap div div{
+    flex: 2;
+}
+.containerMap div p{
+    flex: 1;
+}
+.containerMap div div p{
+    margin-left: 10px;
+}
+
+.containerMap input{
+    width: 20px;
+    height: 20px;
+    flex: 1;
+}
