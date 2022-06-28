@@ -26,33 +26,53 @@
     flex: 2;
     margin-left: 20px;
 }
-.containerHead div:nth-child(2),.containerHead div:nth-child(3),.containerHead div:nth-child(4){
+.containerHead div:nth-child(2),.containerHead div:nth-child(3),.containerHead div:nth-child(4),.containerHead div:nth-child(5){
     flex: 1;
 }
 .containerMap{
     display: flex;
     flex-direction: column;
-   
+    justify-content: center;
+    text-align: center;
+  
 }
 .containerMap div{
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    justify-content: center;
     align-items: center;
-text-align: center;
+    text-align: center;
+
 }
-.containerMap div div{
+.containerMap div div:nth-child(1){
     flex: 2;
+    margin-left: 10px;
 }
 .containerMap div p{
     flex: 1;
+}
+.containerMap div select{
+    flex: 1;
+    width: 10px;
+
 }
 .containerMap div div p{
     margin-left: 10px;
 }
 
-.containerMap input{
-    width: 20px;
-    height: 20px;
-    flex: 1;
+
+.buttonDiv{
+flex: 1;
+
+}
+.buttonDiv button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+
+}
+.containerMap div select{
+    width: 5px;
+    height: 30px;
+    border: 2px solid blanchedalmond;
 }
