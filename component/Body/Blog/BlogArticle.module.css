@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Libre+Bodoni:wght@500&display=swap');
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'EB Garamond', serif;
+}
+.container p{
+    margin: 20px;
+}

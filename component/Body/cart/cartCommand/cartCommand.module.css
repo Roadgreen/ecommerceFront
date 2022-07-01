@@ -54,6 +54,7 @@
         margin-left: 20px;
         margin-right: 20px;
         background-color: white;
+        cursor: pointer;
     }
     .panPayment{
         text-align: center;
