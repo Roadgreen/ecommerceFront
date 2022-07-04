@@ -4,7 +4,6 @@ import Image from 'next/image'
 
 export default function BlogArticle(props) {
     const data = props.data;
-  console.log(data)
   return (
     <div className={styles.container}>
         <h1>{data.name}</h1>

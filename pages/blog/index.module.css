@@ -94,3 +94,12 @@ font-size: 17px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+
+.returnButton{
+    margin-left: 20%;
+    margin-top: 10%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'EB Garamond', serif;
+}

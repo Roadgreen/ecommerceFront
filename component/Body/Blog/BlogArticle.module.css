@@ -6,7 +6,9 @@
     justify-content: center;
     align-items: center;
     font-family: 'EB Garamond', serif;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .container p{
-    margin: 20px;
+
 }
