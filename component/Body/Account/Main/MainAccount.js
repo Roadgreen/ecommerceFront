@@ -12,6 +12,18 @@ export default function MainAccount(props) {
   const [comments,setComments] = useState(false);
   const [factures,setFactures] = useState(false);
 
+  const handleClick = (a)=>{
+    console.log('ici',a)
+switch(a){
+case 1: setCommandes(true);setComments(false);setFactures(false); console.log('icihere');
+break;
+case 2: setCommandes(false);setComments(true);setFactures(false);
+break;
+case 3: setCommandes(false);setComments(false);setFactures(true);
+break;
+}
+  }
+
   return (
     <div className={styles.container}>
       {/** Contener accountgauche button */}
@@ -25,9 +37,9 @@ export default function MainAccount(props) {
           />
         </div>
         <h4>{data.name}</h4>
-        <button>Mes commandes</button>
-        <button>Mes commentaires</button>
-        <button>Mes factures</button>
+        <button onClick={()=>{handleClick(1)}}>Mes commandes</button>
+        <button onClick={()=>{handleClick(2)}}>Mes commentaires</button>
+        <button onClick={()=>{handleClick(3)}}>Mes factures</button>
       </div>
       {/**Container droit avec infos */}
       {commandes? <Command data={data} />: console.log('')}

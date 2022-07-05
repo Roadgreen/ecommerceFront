@@ -2,6 +2,11 @@ import React from "react";
 import styles from "./command.module.css";
 export default function command(props) {
   const data = props.data;
+  const TestMapSpecial = (a,b) =>{
+    for(var i = 0; i > a.length; i++){
+     console.log(a[i].localCompare(b[i]));
+    }
+  }
   const CommandMapping = (item, id) => {
     return (
       <div key={id}>

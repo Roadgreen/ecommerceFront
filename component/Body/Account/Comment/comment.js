@@ -1,5 +1,5 @@
 import React from 'react'
-
+import styles from './comment.module.css'
 export default function comment(props) {
     const data = props.data;
   const CommandMapping = (item, id) => {
@@ -17,7 +17,7 @@ export default function comment(props) {
     <h3>Mes Commentaires</h3>
     <div>
       <h4>ID</h4>
-      <h4>QTÉ</h4>
+      <h4>COMMENTAIRE</h4>
       <h4>DATE</h4>
       <h4></h4>
     </div>
